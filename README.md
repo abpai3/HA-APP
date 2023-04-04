@@ -23,13 +23,15 @@ To start the docker application container:
 
   
 primary instance :
+
 docker run -d --name app-server-1 --app-network -p 8081:8080 application:1.0
 
   
 secondary instance : 
+
 docker run -d --name app-server-2 --app-network -p 8081:8080 application:1.0
 
-run ** docker ps ** to see if both instance is running fine , can be accessed with localhost:8081 , localhost:8082
+run **docker ps** to see if both instance is running fine , can be accessed with localhost:8081 , localhost:8082
 
 ## NGINX 
 
