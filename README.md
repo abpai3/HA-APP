@@ -56,3 +56,5 @@ run postgress image using below command
 
 **docker run -d --name postgres --network app-network -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=app@12345 -e POSTGRES_DB=UserDetails -p 9000:5432 <postgres image id>**
 
+  
+connect to DB and create table with name users with columns [name, street, city, state, date] and some values to see the result in application.
