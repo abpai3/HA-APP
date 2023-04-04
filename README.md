@@ -47,9 +47,12 @@ check container is running or not by using **docker ps**, if you see container l
 
   
 localhost:8080/health - return status ok 
+  
+
 localhost:8080/getUsers - returns user details from postgres db.
   
 ## Postgres DataBase
 run postgress image using below command 
 
 **docker run -d --name postgres --network app-network -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=app@12345 -e POSTGRES_DB=UserDetails -p 9000:5432 <postgres image id>**
+
